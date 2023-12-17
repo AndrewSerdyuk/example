@@ -6,8 +6,9 @@ public class Main_example {
     }
 
     public static int factorial(int num){
-        if (num < 0)
+        if (num < 0) {
             throw new IllegalArgumentException("Input should be a non-negative integer");
+        }
 
         return calculate(num);
     }
@@ -21,11 +22,10 @@ public class Main_example {
     }
 
     public static void result(int data){
-        if (data < 0) {
-            System.out.println("Result is negative");
-        } else {
-            System.out.println("Result is: " + data);
-        }
+        if (data < 0)
+            System.out.println("Warning!!! Result is negative");
+
+        System.out.println("Result is: " + data);
     }
 }
 
